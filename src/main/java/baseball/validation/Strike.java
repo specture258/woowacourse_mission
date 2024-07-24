@@ -1,5 +1,7 @@
 package baseball.validation;
 
+import baseball.message.Message;
+
 public class Strike implements Correctable{
     int cnt =0;
     @Override

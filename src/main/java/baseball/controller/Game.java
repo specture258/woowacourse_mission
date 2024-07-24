@@ -1,7 +1,10 @@
 package baseball.controller;
 
+import baseball.message.Message;
 import baseball.number.Computer;
 import baseball.number.User;
+import baseball.validation.Ball;
+import baseball.validation.Strike;
 
 import static camp.nextstep.edu.missionutils.Console.readLine;
 
