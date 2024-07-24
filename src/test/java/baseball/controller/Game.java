@@ -63,5 +63,9 @@ public class Game {
         return str.split("");
     }
 
+    public void setExit(boolean exit) {
+        this.exit = exit;
+    }
+
 
 }
