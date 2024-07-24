@@ -3,6 +3,8 @@ package baseball.controller;
 import baseball.number.Computer;
 import baseball.number.User;
 
+import static camp.nextstep.edu.missionutils.Console.readLine;
+
 public class Game {
 
     Ball ball = new Ball();
@@ -38,6 +40,20 @@ public class Game {
 
         if(ballCorrect && !strikeCorrect) {
             System.out.println();
+        }
+    }
+
+    public void chooseOption(){
+
+        System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
+        String option = readLine();
+
+        if (option.equals("1")) {
+            play();
+        } else if (option.equals("2")) {
+            setExit(true);
+        }else{
+            throw new IllegalArgumentException();
         }
     }
 
