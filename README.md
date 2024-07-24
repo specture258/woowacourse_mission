@@ -35,6 +35,22 @@
 - 사용자가 잘못된 값을 입력할 경우 `IllegalArgumentException`을 발생시킨 후 애플리케이션은 종료되어야 한다.
 - 아래의 프로그래밍 실행 결과 예시와 동일하게 입력과 출력이 이루어져야 한다.
 
+1. 패키지 나누기(compare, controller, message, number)
+2. 숫자 입력 받는 클래스 User
+3. 랜덤 숫자를 생성하는 클래스 Computer
+4. 숫자야구 게임을 실행하는 클래스 Game
+5. 입력받은 숫자를 반환하는 getInputNuber 메소드
+6. 랜덤 숫자를 반환하는 createRandomNumber 메소드
+7. 볼/스트라이크를 판정하는 Corretable 인터페이스
+8. 입력받은 숫자와 랜덤 숫자를 String배열로 바꿔주는 StrToStrArr 메소드
+9. 게임을 진행하는 play 메소드
+10. 입력을 받아서 볼/스트라이크/낫싱을 판정하는 flow 메소드
+11. 게임 종료 후 1/2 옵션을 선택하는 chooseOption 메소드
+12. 볼을 판정하는 isCorrect 메소드
+13. 스트라이크를 판정하는 isCorrect 메소드
+14. 예외처리 추가
+15. 볼/스트라이크/낫싱을 출력하는 message 패키지의 메소드들
+
 <br>
 
 ## ✍🏻 입출력 요구사항
