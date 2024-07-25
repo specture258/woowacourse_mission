@@ -14,16 +14,16 @@ public class Strike implements Correctable{
             pointer++;
         }
 
-        if(cnt == 3){
+        if (cnt == 3){
             System.out.println(Message.threeStrike());
             return true;
-        }else if(cnt == 2){
+        } else if (cnt == 2){
             System.out.println(Message.twoStrike());
             return true;
-        }else if(cnt == 1){
+        } else if (cnt == 1){
             System.out.println(Message.oneStrike());
             return true;
-        }else{
+        } else{
             return false;
         }
     }
