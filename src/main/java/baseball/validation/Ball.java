@@ -18,11 +18,13 @@ public class Ball implements Correctable {
             cnt++;
         }
 
-        if (cnt !=0){
-            System.out.print(Message.ballMessage(cnt));
-            return true;
-        } else{
+        if (cnt == 0){
             return false;
         }
+
+        System.out.print(Message.ballMessage(cnt));
+        return true;
+
     }
+
 }

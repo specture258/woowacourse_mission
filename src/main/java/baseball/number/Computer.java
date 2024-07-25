@@ -7,13 +7,11 @@ import java.util.stream.Collectors;
 import static camp.nextstep.edu.missionutils.Randoms.pickNumberInRange;
 
 public class Computer {
+
     public String createRandomNumber() {
         Set<Integer> set = new LinkedHashSet<>();
 
-        while(true) {
-            if(set.size() == 3) {
-                break;
-            }
+        while(set.size() != 3) {
             set.add(pickNumberInRange(1, 9));
         }
         return  set.stream()

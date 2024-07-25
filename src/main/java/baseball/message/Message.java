@@ -5,16 +5,8 @@ public class Message {
         return cnt + "볼 ";
     }
 
-    static public String oneStrike(){
-        return "1스트라이크";
-    }
-
-    static public String twoStrike(){
-        return "2스트라이크";
-    }
-
-    static public String threeStrike(){
-        return "3스트라이크";
+    static public String strikeMessage(int cnt){
+        return cnt + "스트라이크 ";
     }
 
     static public String gameMessage(){

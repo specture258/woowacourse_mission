@@ -23,7 +23,6 @@ public class Game {
         }
     }
 
-
     public void flow(Ball ball, Strike strike, String computerInputNumber){
         User user = new User();
         String userInputNumber = user.getInputNumber();
@@ -61,8 +60,6 @@ public class Game {
         }
     }
 
-
-
     public String[] StrToStrArr(String str){
         return str.split("");
     }
@@ -70,6 +67,5 @@ public class Game {
     public void setExit(boolean exit) {
         this.exit = exit;
     }
-
 
 }
