@@ -35,22 +35,35 @@
 - 사용자가 잘못된 값을 입력할 경우 `IllegalArgumentException`을 발생시킨 후 애플리케이션은 종료되어야 한다.
 - 아래의 프로그래밍 실행 결과 예시와 동일하게 입력과 출력이 이루어져야 한다.
 
-1. 패키지 나누기(compare, controller, message, number)
-2. 숫자 입력 받는 클래스 User
-3. 랜덤 숫자를 생성하는 클래스 Computer
-4. 숫자야구 게임을 실행하는 클래스 Game
-5. 입력받은 숫자를 반환하는 getInputNuber 메소드
-6. 랜덤 숫자를 반환하는 createRandomNumber 메소드
-7. 볼/스트라이크를 판정하는 Corretable 인터페이스
-8. 입력받은 숫자와 랜덤 숫자를 String배열로 바꿔주는 StrToStrArr 메소드
-9. 게임을 진행하는 play 메소드
-10. 입력을 받아서 볼/스트라이크/낫싱을 판정하는 flow 메소드
-11. 게임 종료 후 1/2 옵션을 선택하는 chooseOption 메소드
-12. 볼을 판정하는 isCorrect 메소드
-13. 스트라이크를 판정하는 isCorrect 메소드
-14. 예외처리 추가
-15. 볼/스트라이크/낫싱을 출력하는 message 패키지의 메소드들
+- 1. 패키지 나누기(compare, controller, message, number)
+- 2. 숫자 입력 받는 클래스 User
+- 3. 랜덤 숫자를 생성하는 클래스 Computer
+- 4. 숫자야구 게임을 실행하는 클래스 Game
+- 5. 입력받은 숫자를 반환하는 getInputNuber 메소드
+- 6. 랜덤 숫자를 반환하는 createRandomNumber 메소드
+- 7. 볼/스트라이크를 판정하는 Corretable 인터페이스
+- 8. 입력받은 숫자와 랜덤 숫자를 String배열로 바꿔주는 StrToStrArr 메소드
+- 9. 게임을 진행하는 play 메소드
+- 10. 입력을 받아서 볼/스트라이크/낫싱을 판정하는 flow 메소드
+- 11. 게임 종료 후 1/2 옵션을 선택하는 chooseOption 메소드
+- 12. 볼을 판정하는 isCorrect 메소드
+- 13. 스트라이크를 판정하는 isCorrect 메소드
+- 14. 예외처리 추가
+- 15. 볼/스트라이크/낫싱을 출력하는 message 패키지의 메소드들
 
+
+## 개선사항
+- 패키지 구조 변경 -> controller / domain / view
+
+- 입력하는 값에 대한 검증 클래스를 추가
+
+- 출력값이 패키지와 클래스에 상관없이 여러곳에 있어서 가독성이 떨어지고 관리하기 어려움   ->  OutputView 클래스를 통해서 한 곳으로 모음
+
+- 숫자를 입력하는 로직과 검증하는 로직이 한 곳에 있어서 역할을 나눠야할 필요가 있음 ->
+InputView 클래스를 통해서 입력을 관리하고 InputViewValidation 클래스를 통해서 입력에 대한 검증을 처리 (생성자)를 통해서 자동으로 검증이 되도록 함
+
+- 볼/스트라이크를 판단하는 로직 개선 (String[]을 사용하여 매서드 사용에 한계가 있고 반복되는 코드가 많음)
+  List로 숫자를 받아서 볼/스트라이크를 한꺼번에 판단
 <br>
 
 ## ✍🏻 입출력 요구사항
