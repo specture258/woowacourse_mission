@@ -1,4 +1,4 @@
-package baseball.number;
+package baseball.domain.number;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;

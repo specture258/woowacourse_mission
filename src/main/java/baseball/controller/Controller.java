@@ -1,8 +1,8 @@
 package baseball.controller;
 
-import baseball.number.AnswerNumber;
-import baseball.number.BaseballNumber;
-import baseball.validation.Count;
+import baseball.domain.number.AnswerNumber;
+import baseball.domain.number.BaseballNumber;
+import baseball.domain.validation.Count;
 import baseball.view.InputView;
 import baseball.view.OutputView;
 
